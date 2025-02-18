@@ -9,7 +9,6 @@ const imgElement = document.getElementById('images');
 const leftButton = document.querySelector('#arrow_left button');
 const rightButton = document.querySelector('#arrow_right button');
 
-// Función para actualizar la imagen y los botones
 function updateCarousel() {
     imgElement.style.opacity = 0;
     setTimeout(() => {
