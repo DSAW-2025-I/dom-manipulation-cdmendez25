@@ -21,7 +21,6 @@ function updateCarousel() {
     rightButton.disabled = currentIndex === images.length - 1;
 }
 
-// Función para retroceder en el carrusel
 function changeImageLeft() {
     if (currentIndex > 0) {
         currentIndex--;
@@ -29,7 +28,6 @@ function changeImageLeft() {
     }
 }
 
-// Función para avanzar en el carrusel
 function changeImageRight() {
     if (currentIndex < images.length - 1) {
         currentIndex++;
@@ -40,7 +38,6 @@ function changeImageRight() {
 rightButton.onclick = changeImageRight;
 leftButton.onclick = changeImageLeft;
 
-// Cargar la primera imagen al iniciar
 window.onload = () => {
     imgElement.src = images[currentIndex];
     updateCarousel();
